@@ -1,101 +1,101 @@
-company,website,linkedin,category,relevance,funding_stage,country,priority
-Stability AI,https://stability.ai,https://linkedin.com/company/stability-ai,Image Generation,"Stable Diffusion - huge anime community, fine-tuned models",Series B,UK,HIGH
-Midjourney,https://midjourney.com,https://linkedin.com/company/midjourney,Image Generation,"Popular for anime/art styles, niji mode",Self-funded,US,HIGH
-Leonardo.AI,https://leonardo.ai,https://linkedin.com/company/leonardo-ai,Image Generation,"Game art generation, anime-style models",Series A,Australia,HIGH
-Ideogram,https://ideogram.ai,https://linkedin.com/company/ideogram-ai,Image Generation,"Text rendering, creative generation",Series A,US,MEDIUM
-Photoroom,https://photoroom.com,https://linkedin.com/company/photoroom,Image Generation,"AI photo editing, background generation",Series B ($64M),France,MEDIUM
-Artbreeder,https://artbreeder.com,https://linkedin.com/company/artbreeder,Image Generation,"Collaborative AI art, character portraits",Seed,US,MEDIUM
-NovelAI,https://novelai.net,,Image Generation,"Anime-focused image generation, storytelling",Unknown,US,HIGH
-Invoke AI,https://invoke.com,https://linkedin.com/company/invoke-ai,Image Generation,"Open-source Stable Diffusion tools, acquired by Adobe",Acquired,US,MEDIUM
-Krea AI,https://krea.ai,https://linkedin.com/company/krea-ai,Image Generation,"Real-time AI generation, creative tools",Seed,US,MEDIUM
-Playgroundai,https://playground.com,https://linkedin.com/company/playgroundai,Image Generation,Free AI image generation platform,Series A,US,MEDIUM
-NightCafe,https://nightcafe.studio,https://linkedin.com/company/nightcafe-studio,Image Generation,"AI art community, multiple models",Bootstrapped,Australia,LOW
-Civitai,https://civitai.com,https://linkedin.com/company/civitai,Image Generation,"AI model sharing platform, huge anime model community",Series A,US,HIGH
-Tensor.Art,https://tensor.art,,Image Generation,"AI image generation, anime focus",Unknown,Singapore,HIGH
-PixAI,https://pixai.art,,Image Generation,Anime-specific AI art generator,Unknown,US,HIGH
-Holara AI,https://holara.ai,,Image Generation,Anime art generation specialist,Unknown,US,HIGH
-Runway,https://runwayml.com,https://linkedin.com/company/runwayml,Video Generation,"Gen-3 video, animation capabilities",Series D ($544M),US,HIGH
-Pika Labs,https://pika.art,https://linkedin.com/company/pika-labs,Video Generation,Video generation from images/text,Series A,US,HIGH
-Luma AI,https://lumalabs.ai,https://linkedin.com/company/luma-ai,Video Generation,Dream Machine video generation,Series B,US,HIGH
-HeyGen,https://heygen.com,https://linkedin.com/company/heygen,Video Generation,AI avatar video generation,Series A,US,MEDIUM
-Haiper,https://haiper.ai,https://linkedin.com/company/haiper-ai,Video Generation,"Video generation, ex-DeepMind team",Series A,UK,HIGH
-Kling AI (Kuaishou),https://klingai.com,https://linkedin.com/company/kuaishou,Video Generation,"Top-ranked video generation, entertainment focus",Corporate,China,HIGH
-Minimax,https://minimaxi.com,https://linkedin.com/company/minimax-ai,Video Generation,"Hailuo video, $2.5B valuation",Series B,China,HIGH
-Captions,https://captions.ai,https://linkedin.com/company/captions-ai,Video Generation,"AI video editing, avatars for creators",Series C ($100M),US,MEDIUM
-D-ID,https://d-id.com,https://linkedin.com/company/d-id,Video Generation,"AI video avatars, talking heads",Series B,Israel,MEDIUM
-Hedra,https://hedra.com,https://linkedin.com/company/hedra-ai,Video Generation,"Character dialogue videos, $32M from A16z",Series A,US,HIGH
-Veo (Google DeepMind),https://deepmind.google,https://linkedin.com/company/googledeepmind,Video Generation,Google's video generation model,Corporate,US,MEDIUM
-Zhipu AI (Ying),https://zhipuai.cn,,Video Generation,"Chinese video generation, Sora competitor",Series C,China,MEDIUM
-Inworld AI,https://inworld.ai,https://linkedin.com/company/inworld-ai,Gaming AI,"NPC AI, Xbox/Microsoft partnership",Series A ($60M),US,HIGH
-Convai,https://convai.com,https://linkedin.com/company/convai,Gaming AI,Game character conversations,Seed,US,HIGH
-Scenario,https://scenario.com,https://linkedin.com/company/scenario-gg,Gaming AI,AI game asset generation,Series A,US,HIGH
-Sett,https://sett.gg,https://linkedin.com/company/sett-ai,Gaming AI,"AI agents for mobile game dev, $27M funding",Series A,US,HIGH
-Layer AI,https://layer.ai,https://linkedin.com/company/layer-ai,Gaming AI,AI game asset creation platform,Seed,US,HIGH
-Latitude (AI Dungeon),https://latitude.io,https://linkedin.com/company/latitude-io,Gaming AI,AI-powered interactive storytelling,Series A,US,MEDIUM
-Promethean AI,https://prometheanai.com,https://linkedin.com/company/promethean-ai,Gaming AI,AI virtual world creation,Seed ($3.5M),US,HIGH
-Blackshark AI,https://blackshark.ai,https://linkedin.com/company/blackshark-ai,Gaming AI,"3D world generation, Microsoft Flight Sim",Series B,Austria,MEDIUM
-Roblox,https://roblox.com,https://linkedin.com/company/roblox,Gaming AI,"AI game creation tools, massive platform",Public,US,MEDIUM
-Unity,https://unity.com,https://linkedin.com/company/unity-technologies,Gaming AI,Game engine with AI tools,Public,US,MEDIUM
-Sortium,https://sortium.com,https://linkedin.com/company/sortium,Gaming AI,Real-time 3D asset generation,Seed,US,HIGH
-Opus,https://opus.ai,https://linkedin.com/company/opus-ai,Gaming AI,Generative AI world building,Series A,US,MEDIUM
-Spline,https://spline.design,https://linkedin.com/company/splonetool,Gaming AI,3D design with AI generation,Series A,US,MEDIUM
-Ponzu,https://ponzu.ai,,Gaming AI,AI texturing for 3D assets,Seed,US,HIGH
-Meshy,https://meshy.ai,https://linkedin.com/company/meshy-ai,Gaming AI,3D model generation from text/images,Seed,US,HIGH
-Cartwheel,https://cartwheel.com,https://linkedin.com/company/cartwheel-ai,Animation AI,"3D character animation, Pixar/DreamWorks users",Seed ($15.6M),US,HIGH
-Cheehoo,https://cheehoo.ai,https://linkedin.com/company/cheehoo-ai,Animation AI,"Animation AI, ex-DreamWorks team",Seed ($10M),US,HIGH
-Animation Inc.,https://animation.inc,https://linkedin.com/company/animation-inc,Animation AI,Real-time generative animation,Seed,US,HIGH
-Kinetix,https://kinetix.tech,https://linkedin.com/company/kinetix,Animation AI,AI motion capture for games,Series A,France,HIGH
-Wonder Dynamics,https://wonderdynamics.com,https://linkedin.com/company/wonder-dynamics,Animation AI,"AI-powered VFX, acquired by Autodesk",Acquired,US,MEDIUM
-Plask,https://plask.ai,https://linkedin.com/company/plask-ai,Animation AI,AI motion capture from video,Series A,South Korea,HIGH
-Kaedim,https://kaedim3d.com,https://linkedin.com/company/kaedim,Animation AI,2D to 3D AI conversion,Series A,UK,HIGH
-Rokoko,https://rokoko.com,https://linkedin.com/company/rokoko-electronics,Animation AI,"Motion capture, AI-assisted animation",Series A,Denmark,MEDIUM
-DeepMotion,https://deepmotion.com,https://linkedin.com/company/deepmotion,Animation AI,AI body tracking and animation,Series A,US,MEDIUM
-RADiCAL,https://radical.app,https://linkedin.com/company/radical-motion,Animation AI,AI motion capture from video,Seed,US,MEDIUM
-Character.AI,https://character.ai,https://linkedin.com/company/character-ai,Character AI,"AI characters, personality generation",Series A ($150M),US,HIGH
-Synthesia,https://synthesia.io,https://linkedin.com/company/synthesiahq,Character AI,"AI video avatars, $2.1B valuation",Series D ($180M),UK,MEDIUM
-Soul Machines,https://soulmachines.com,https://linkedin.com/company/soul-machines,Character AI,Autonomous digital humans,Series B,New Zealand,MEDIUM
-Genies,https://genies.com,https://linkedin.com/company/genaborhood,Character AI,AI avatar creation platform,Series C,US,MEDIUM
-Lemon Slice,https://lemonslice.ai,https://linkedin.com/company/lemon-slice-ai,Character AI,"Real-time AI avatars, $10.5M from YC",Seed,US,HIGH
-AvatarOS,https://avatar.os,https://linkedin.com/company/avataros,Character AI,"Virtual influencer platform, A16z backed",Seed ($7M),US,HIGH
-Hologram Labs,https://hologramlabs.com,https://linkedin.com/company/hologram-labs,Character AI,AI for vtubers/digital celebrities,Series A,US,HIGH
-IMVU,https://imvu.com,https://linkedin.com/company/imvu,Character AI,Avatar social platform with AI,Growth,US,LOW
-Ready Player Me,https://readyplayer.me,https://linkedin.com/company/wolf3d,Character AI,Cross-game avatar platform,Series B,Estonia,MEDIUM
-Uneeq,https://uneeq.com,https://linkedin.com/company/uneeq,Character AI,Digital human platform,Series A,New Zealand,MEDIUM
-ElevenLabs,https://elevenlabs.io,https://linkedin.com/company/elevenlabsio,Voice AI,"Voice synthesis for characters, $3.3B valuation",Series C ($180M),US,HIGH
-Resemble AI,https://resemble.ai,https://linkedin.com/company/resembleai,Voice AI,Voice cloning for games/content,Series A,US,HIGH
-Replica Studios,https://replicastudios.com,https://linkedin.com/company/replica-studios,Voice AI,AI voices for games,Series A,Australia,HIGH
-WellSaid Labs,https://wellsaidlabs.com,https://linkedin.com/company/wellsaid-labs,Voice AI,Enterprise AI voice platform,Series B,US,MEDIUM
-Murf AI,https://murf.ai,https://linkedin.com/company/murf-ai,Voice AI,Text-to-speech for creators,Series A,US,MEDIUM
-Play.ht,https://play.ht,https://linkedin.com/company/play-ht,Voice AI,AI voice generation platform,Seed,US,MEDIUM
-Suno,https://suno.ai,https://linkedin.com/company/suno-ai,Voice AI,"AI music generation, $125M Series B",Series B ($125M),US,HIGH
-Udio,https://udio.com,https://linkedin.com/company/udio-ai,Voice AI,AI music generation,Seed,US,HIGH
-Scale AI,https://scale.com,https://linkedin.com/company/scale-ai,Training Data,"Training data for AI, $7.3B valuation",Series E,US,HIGH
-Labelbox,https://labelbox.com,https://linkedin.com/company/labelbox,Training Data,Data labeling platform,Series D,US,MEDIUM
-Gretel AI,https://gretel.ai,https://linkedin.com/company/gretel-ai,Training Data,"Synthetic data generation, $65.5M funding",Series B,US,HIGH
-Synthesis AI,https://synthesis.ai,https://linkedin.com/company/synthesisai,Training Data,Synthetic data for computer vision,Series B ($30M),US,HIGH
-Tonic AI,https://tonic.ai,https://linkedin.com/company/tonic-ai,Training Data,Synthetic data generation,Series C ($35M),US,MEDIUM
-Parallel Domain,https://paralleldomain.com,https://linkedin.com/company/parallel-domain,Training Data,Synthetic data for perception AI,Series A ($22.5M),US,HIGH
-Surge AI,https://surgehq.ai,https://linkedin.com/company/surge-ai,Training Data,High-quality AI training data,Series A,US,MEDIUM
-Sama,https://sama.com,https://linkedin.com/company/sama,Training Data,AI training data annotation,Series C,US,MEDIUM
-Defined.ai,https://defined.ai,https://linkedin.com/company/defined-ai,Training Data,AI data marketplace,Series B,US,HIGH
-Mostly AI,https://mostly.ai,https://linkedin.com/company/mostly-ai,Training Data,Synthetic data platform,Series B,Austria,MEDIUM
-OpenAI,https://openai.com,https://linkedin.com/company/openai,Foundation Models,"DALL-E, Sora - visual generation",Growth,US,HIGH
-Anthropic,https://anthropic.com,https://linkedin.com/company/anthropic,Foundation Models,Claude - multimodal capabilities,Series C+,US,MEDIUM
-Mistral AI,https://mistral.ai,https://linkedin.com/company/mistral-ai,Foundation Models,"Open-weight models, multimodal",Series B,France,MEDIUM
-Cohere,https://cohere.com,https://linkedin.com/company/cohere-ai,Foundation Models,Enterprise LLM platform,Series C,Canada,LOW
-AI21 Labs,https://ai21.com,https://linkedin.com/company/ai21,Foundation Models,"Jamba models, enterprise AI",Series C,Israel,LOW
-Moonshot AI (Kimi),https://moonshot.cn,,Foundation Models,"Chinese foundation model, multimodal",Series B,China,MEDIUM
-01.AI,https://01.ai,https://linkedin.com/company/01-ai,Foundation Models,"Yi models, Kai-Fu Lee startup",Series A,China,MEDIUM
-Stepfun,https://stepfun.com,,Foundation Models,"Chinese AI startup, multimodal",Series B,China,LOW
-Baichuan,https://baichuan-ai.com,,Foundation Models,Chinese LLM startup,Series A,China,LOW
-Alibaba (Tongyi),https://tongyi.aliyun.com,https://linkedin.com/company/alibaba,Foundation Models,"Qwen models, Wan video generation",Corporate,China,MEDIUM
-Descript,https://descript.com,https://linkedin.com/company/descript,Creative Tools,"AI video/audio editing, Overdub voice",Series C ($100M),US,MEDIUM
-Canva,https://canva.com,https://linkedin.com/company/canva,Creative Tools,Design platform with AI generation,Growth,Australia,LOW
-Jasper,https://jasper.ai,https://linkedin.com/company/jasper-ai,Creative Tools,AI content platform,Series A,US,LOW
-Luma Labs,https://lumalabs.ai,https://linkedin.com/company/luma-ai,Creative Tools,3D capture and generation,Series B,US,HIGH
-Topaz Labs,https://topazlabs.com,https://linkedin.com/company/topaz-labs,Creative Tools,AI image/video enhancement,Bootstrapped,US,MEDIUM
-Magnific AI,https://magnific.ai,https://linkedin.com/company/magnific-ai,Creative Tools,AI image upscaling/enhancement,Seed,Spain,HIGH
-Clipdrop (Stability),https://clipdrop.co,https://linkedin.com/company/clipdrop,Creative Tools,AI image editing tools,Acquired,France,MEDIUM
-Imagen AI,https://imagen-ai.com,https://linkedin.com/company/imagen-ai,Creative Tools,AI photo editing for photographers,Series A,Israel,LOW
-Kaiber,https://kaiber.ai,https://linkedin.com/company/kaiber-ai,Creative Tools,AI video generation for creators,Seed,US,HIGH
-Genmo,https://genmo.ai,https://linkedin.com/company/genmo-ai,Creative Tools,AI video/3D generation,Seed,US,HIGH
+company,website,linkedin,category,relevance,funding_stage,country,priority,notes
+Stability AI,https://stability.ai,https://linkedin.com/company/stability-ai,Image Generation,"Stable Diffusion - MASSIVE anime community, thousands of fine-tuned models",Series B,UK,HIGH,LEGENDARY FIT - Anime is core to their community
+Midjourney,https://midjourney.com,https://linkedin.com/company/midjourney,Image Generation,"Niji mode specifically for anime, huge art community",Self-funded,US,HIGH,
+Leonardo.AI,https://leonardo.ai,https://linkedin.com/company/leonardo-ai,Image Generation,"Game art generation, anime-style models, gaming focus",Series A,Australia,HIGH,"LEGENDARY FIT - Built for game dev, strong anime models"
+Civitai,https://civitai.com,https://linkedin.com/company/civitai,Image Generation,"Largest anime AI model community, model sharing platform",Series A,US,HIGH,LEGENDARY FIT - Anime is 70%+ of their content
+NovelAI,https://novelai.net,,Image Generation,"Anime-first image generation, trained on anime data",Unknown,US,HIGH,LEGENDARY FIT - Anime-specific product
+PixAI,https://pixai.art,,Image Generation,Anime-specific AI art generator,Unknown,US,HIGH,LEGENDARY FIT - 100% anime focused
+Holara AI,https://holara.ai,,Image Generation,Anime art generation specialist,Unknown,US,HIGH,LEGENDARY FIT - Anime-only product
+Ideogram,https://ideogram.ai,https://linkedin.com/company/ideogram-ai,Image Generation,"Text rendering in images, creative generation",Series A,US,MEDIUM,
+Artbreeder,https://artbreeder.com,https://linkedin.com/company/artbreeder,Image Generation,"Collaborative AI art, character portraits",Seed,US,MEDIUM,
+Invoke AI,https://invoke.com,https://linkedin.com/company/invoke-ai,Image Generation,"Open-source Stable Diffusion tools, acquired by Adobe",Acquired,US,MEDIUM,
+Krea AI,https://krea.ai,https://linkedin.com/company/krea-ai,Image Generation,"Real-time AI generation, creative tools",Seed,US,MEDIUM,
+Playground AI,https://playground.com,https://linkedin.com/company/playgroundai,Image Generation,Free AI image generation platform,Series A,US,MEDIUM,
+OpenAI,https://openai.com,https://linkedin.com/company/openai,Image Generation,"DALL-E, Sora video - visual generation at scale",Growth,US,HIGH,
+Adobe Firefly,https://adobe.com/products/firefly,https://linkedin.com/company/adobe,Image Generation,"Enterprise image generation, creative cloud integration",Public,US,MEDIUM,
+Black Forest Labs,https://blackforestlabs.ai,https://linkedin.com/company/black-forest-labs,Image Generation,"FLUX models, ex-Stability team, state-of-art image gen",Series A,US,HIGH,
+Recraft AI,https://recraft.ai,https://linkedin.com/company/recraft-ai,Image Generation,Vector and design-focused image generation,Series A,US,MEDIUM,
+Runway,https://runwayml.com,https://linkedin.com/company/runwayml,Video Generation,"Gen-3 video, animation capabilities, Lionsgate partnership",Series D ($544M),US,HIGH,
+Pika Labs,https://pika.art,https://linkedin.com/company/pika-labs,Video Generation,"Video generation from images/text, popular for anime clips",Series A,US,HIGH,
+Luma AI,https://lumalabs.ai,https://linkedin.com/company/luma-ai,Video Generation,"Dream Machine video generation, 3D capture",Series B,US,HIGH,
+HeyGen,https://heygen.com,https://linkedin.com/company/heygen,Video Generation,AI avatar video generation,Series A,US,MEDIUM,
+Hedra,https://hedra.com,https://linkedin.com/company/hedra-ai,Video Generation,"Character dialogue videos, $32M from A16z",Series A,US,HIGH,
+Captions,https://captions.ai,https://linkedin.com/company/captions-ai,Video Generation,"AI video editing, avatars for creators",Series C ($100M),US,MEDIUM,
+Genmo,https://genmo.ai,https://linkedin.com/company/genmo-ai,Video Generation,"AI video/3D generation, Mochi model",Seed,US,HIGH,
+Kaiber,https://kaiber.ai,https://linkedin.com/company/kaiber-ai,Video Generation,"AI video generation for music/creators, anime styles popular",Seed,US,HIGH,
+Opus Clip,https://opus.pro,https://linkedin.com/company/opus-clip,Video Generation,"AI video repurposing, gaming content focus",Series A,US,HIGH,Strong gaming/esports creator market
+Twelve Labs,https://twelvelabs.io,https://linkedin.com/company/twelve-labs,Video Generation,"Video understanding AI, could use labeled video data",Series A,US,MEDIUM,
+Descript,https://descript.com,https://linkedin.com/company/descript,Video Generation,"AI video/audio editing, Overdub voice cloning",Series C ($100M),US,MEDIUM,
+Kapwing,https://kapwing.com,https://linkedin.com/company/kapwing,Video Generation,"Video editing with AI, popular with gaming creators",Series B,US,MEDIUM,
+Inworld AI,https://inworld.ai,https://linkedin.com/company/inworld-ai,Gaming AI,"NPC AI, Xbox/Microsoft partnership, character engine",Series A ($60M),US,HIGH,LEGENDARY FIT - Building game characters
+Convai,https://convai.com,https://linkedin.com/company/convai,Gaming AI,"Game character AI conversations, NPC dialogue",Seed,US,HIGH,
+Scenario,https://scenario.com,https://linkedin.com/company/scenario-gg,Gaming AI,"AI game asset generation, consistent style training",Series A,US,HIGH,LEGENDARY FIT - Game art is core product
+Sett,https://sett.gg,https://linkedin.com/company/sett-ai,Gaming AI,"AI agents for mobile game dev, $27M funding",Series A,US,HIGH,
+Layer AI,https://layer.ai,https://linkedin.com/company/layer-ai,Gaming AI,AI game asset creation platform,Seed,US,HIGH,
+Latitude (AI Dungeon),https://latitude.io,https://linkedin.com/company/latitude-io,Gaming AI,"AI-powered interactive storytelling, anime scenarios popular",Series A,US,HIGH,
+Promethean AI,https://prometheanai.com,https://linkedin.com/company/promethean-ai,Gaming AI,AI virtual world creation for AAA games,Seed ($3.5M),US,HIGH,
+Sortium,https://sortium.com,https://linkedin.com/company/sortium,Gaming AI,Real-time 3D asset generation via prompts,Seed,US,HIGH,
+Meshy,https://meshy.ai,https://linkedin.com/company/meshy-ai,Gaming AI,"3D model generation from text/images, game ready",Seed,US,HIGH,
+Ponzu,https://ponzu.ai,,Gaming AI,"AI texturing for 3D assets, anime styles",Seed,US,HIGH,
+Opus,https://opus.ai,https://linkedin.com/company/opus-ai,Gaming AI,Generative AI world building,Series A,US,MEDIUM,
+Spline,https://spline.design,https://linkedin.com/company/splonetool,Gaming AI,3D design with AI generation,Series A,US,MEDIUM,
+Roblox,https://roblox.com,https://linkedin.com/company/roblox,Gaming AI,"AI game creation tools, massive platform",Public,US,MEDIUM,
+Unity,https://unity.com,https://linkedin.com/company/unity-technologies,Gaming AI,"Game engine with AI tools, Muse AI",Public,US,MEDIUM,
+Epic Games,https://epicgames.com,https://linkedin.com/company/epic-games,Gaming AI,"Unreal Engine AI tools, MetaHuman",Growth,US,MEDIUM,
+Didimo,https://didimo.co,https://linkedin.com/company/didimo,Gaming AI,AI digital human creation for games,Series A,US,MEDIUM,
+Cartwheel,https://cartwheel.com,https://linkedin.com/company/cartwheel-ai,Animation AI,"3D character animation, Pixar/DreamWorks users",Seed ($15.6M),US,HIGH,
+Cheehoo,https://cheehoo.ai,https://linkedin.com/company/cheehoo-ai,Animation AI,Animation AI from ex-DreamWorks/Rideback team,Seed ($10M),US,HIGH,
+Animation Inc.,https://animation.inc,https://linkedin.com/company/animation-inc,Animation AI,"Real-time generative animation, ex-Meta team",Seed,US,HIGH,
+Wonder Dynamics,https://wonderdynamics.com,https://linkedin.com/company/wonder-dynamics,Animation AI,AI-powered VFX and character animation,Acquired by Autodesk,US,MEDIUM,
+DeepMotion,https://deepmotion.com,https://linkedin.com/company/deepmotion,Animation AI,AI body tracking and animation,Series A,US,MEDIUM,
+RADiCAL,https://radical.app,https://linkedin.com/company/radical-motion,Animation AI,AI motion capture from video,Seed,US,MEDIUM,
+Move AI,https://move.ai,https://linkedin.com/company/move-ai,Animation AI,Markerless motion capture AI,Series A,US,MEDIUM,
+Plask,https://plask.ai,https://linkedin.com/company/plask-ai,Animation AI,"AI motion capture from video, anime/game animation",Series A,South Korea,HIGH,LEGENDARY FIT - Korea is anime/gaming hub
+Cascadeur,https://cascadeur.com,https://linkedin.com/company/cascadeur,Animation AI,AI-assisted animation for games,Seed,US,MEDIUM,
+Rokoko,https://rokoko.com,https://linkedin.com/company/rokoko-electronics,Animation AI,"Motion capture with AI, Vision for video mocap",Series A,US,MEDIUM,HQ moved to US
+Character.AI,https://character.ai,https://linkedin.com/company/character-ai,Character AI,AI characters - massive anime character community,Series A ($150M),US,HIGH,LEGENDARY FIT - Anime characters are huge on platform
+Lemon Slice,https://lemonslice.ai,https://linkedin.com/company/lemon-slice-ai,Character AI,"Real-time AI avatars, $10.5M from YC/Matrix",Seed,US,HIGH,
+AvatarOS,https://avataros.ai,https://linkedin.com/company/avataros,Character AI,"Virtual influencer platform, Lil Miquela creator",Seed ($7M),US,HIGH,
+Hologram Labs,https://hologramlabs.com,https://linkedin.com/company/hologram-labs,Character AI,AI for vtubers and digital celebrities,Series A,US,HIGH,LEGENDARY FIT - VTuber is anime culture
+Genies,https://genies.com,https://linkedin.com/company/genaborhood,Character AI,"AI avatar creation, celebrity partnerships",Series C,US,MEDIUM,
+Ready Player Me,https://readyplayer.me,https://linkedin.com/company/wolf3d,Character AI,"Cross-game avatar platform, 9000+ apps",Series B,US,MEDIUM,US operations
+IMVU,https://imvu.com,https://linkedin.com/company/imvu,Character AI,"Avatar social platform, anime styles popular",Growth,US,MEDIUM,
+Krikey AI,https://krikey.ai,https://linkedin.com/company/krikey,Character AI,AI avatar animation from text,Seed,US,MEDIUM,
+Pinscreen,https://pinscreen.com,https://linkedin.com/company/pinscreen,Character AI,AI avatars and digital humans,Series A,US,MEDIUM,
+Brud,https://bfrnd.world,https://linkedin.com/company/brud,Character AI,Virtual characters/influencers (Lil Miquela),Series B,US,HIGH,
+Hour One,https://hourone.ai,https://linkedin.com/company/hourone,Character AI,AI video avatars and presenters,Series A,US,MEDIUM,
+Colossyan,https://colossyan.com,https://linkedin.com/company/colossyan,Character AI,AI video avatars for enterprise,Series A,US,MEDIUM,
+ElevenLabs,https://elevenlabs.io,https://linkedin.com/company/elevenlabsio,Voice AI,"Voice synthesis, dubbing - anime dubbing use case",Series C ($180M),US,HIGH,
+Resemble AI,https://resemble.ai,https://linkedin.com/company/resembleai,Voice AI,Voice cloning for games and content,Series A,US,HIGH,
+Replica Studios,https://replicastudios.com,https://linkedin.com/company/replica-studios,Voice AI,"AI voices specifically for games, Unity/Unreal plugins",Series A,Australia,HIGH,LEGENDARY FIT - Game voice focus
+Suno,https://suno.ai,https://linkedin.com/company/suno-ai,Voice AI,"AI music generation, game/anime soundtracks potential",Series B ($125M),US,HIGH,
+Udio,https://udio.com,https://linkedin.com/company/udio-ai,Voice AI,AI music generation,Seed,US,HIGH,
+WellSaid Labs,https://wellsaidlabs.com,https://linkedin.com/company/wellsaid-labs,Voice AI,Enterprise AI voice platform,Series B,US,MEDIUM,
+Murf AI,https://murf.ai,https://linkedin.com/company/murf-ai,Voice AI,Text-to-speech for creators,Series A,US,MEDIUM,
+Play.ht,https://play.ht,https://linkedin.com/company/play-ht,Voice AI,AI voice generation platform,Seed,US,MEDIUM,
+Scale AI,https://scale.com,https://linkedin.com/company/scale-ai,Training Data,"Training data platform, $7.3B valuation",Series E,US,HIGH,Could be partner or competitor
+Labelbox,https://labelbox.com,https://linkedin.com/company/labelbox,Training Data,Data labeling platform,Series D,US,MEDIUM,
+Gretel AI,https://gretel.ai,https://linkedin.com/company/gretel-ai,Training Data,Synthetic data generation,Series B ($65M),US,MEDIUM,
+Synthesis AI,https://synthesis.ai,https://linkedin.com/company/synthesisai,Training Data,Synthetic data for computer vision - face/body data,Series B ($30M),US,HIGH,
+Parallel Domain,https://paralleldomain.com,https://linkedin.com/company/parallel-domain,Training Data,Synthetic data for perception AI,Series A ($22.5M),US,MEDIUM,
+Surge AI,https://surgehq.ai,https://linkedin.com/company/surge-ai,Training Data,High-quality AI training data,Series A,US,MEDIUM,
+Sama,https://sama.com,https://linkedin.com/company/sama,Training Data,AI training data annotation,Series C,US,MEDIUM,
+Defined.ai,https://defined.ai,https://linkedin.com/company/defined-ai,Training Data,AI data marketplace,Series B,US,HIGH,Potential distribution partner
+Roboflow,https://roboflow.com,https://linkedin.com/company/roboflow-ai,Training Data,Computer vision data and training,Series A,US,MEDIUM,
+V7 Labs,https://v7labs.com,https://linkedin.com/company/v7labs,Training Data,AI training data platform,Series A,US,MEDIUM,
+Luma Labs,https://lumalabs.ai,https://linkedin.com/company/luma-ai,Creative Tools,"3D capture and generation, Genie 3D model",Series B,US,HIGH,
+Topaz Labs,https://topazlabs.com,https://linkedin.com/company/topaz-labs,Creative Tools,"AI image/video enhancement, anime upscaling popular",Bootstrapped,US,MEDIUM,
+Magnific AI,https://magnific.ai,https://linkedin.com/company/magnific-ai,Creative Tools,AI image upscaling - massive anime community use,Seed,US,HIGH,Strong anime user base
+Anthropic,https://anthropic.com,https://linkedin.com/company/anthropic,Creative Tools,"Claude - multimodal, could expand to image training",Series C+,US,MEDIUM,
+Together AI,https://together.ai,https://linkedin.com/company/together-ai,Creative Tools,"Model hosting and fine-tuning, custom training",Series A,US,MEDIUM,
+Hugging Face,https://huggingface.co,https://linkedin.com/company/huggingface,Creative Tools,"Model hub, datasets - anime models popular",Series D,US,MEDIUM,
+Mage.Space,https://mage.space,https://linkedin.com/company/mage-space,Image Generation,"Free AI art generator, anime models available",Seed,US,HIGH,
+Hotpot.ai,https://hotpot.ai,https://linkedin.com/company/hotpot-ai,Image Generation,"AI art tools, anime art generator",Seed,US,MEDIUM,
+Neverai,https://never.ai,https://linkedin.com/company/neverai,Image Generation,AI art platform with anime focus,Seed,US,HIGH,
+Esports Engine,https://esportsengine.com,https://linkedin.com/company/esports-engine,Gaming AI,"Esports production and tech, AI tools",Series A,US,HIGH,Direct esports connection
+Blitz.gg,https://blitz.gg,https://linkedin.com/company/blitz-esports,Gaming AI,"Esports AI assistant, League of Legends focus",Series A,US,HIGH,Direct esports connection
+Mobalytics,https://mobalytics.gg,https://linkedin.com/company/mobalytics,Gaming AI,"Gaming AI analytics, esports coaching",Series A,US,HIGH,Direct esports connection
+Fable Studio,https://fable-studio.com,https://linkedin.com/company/fable-studio,Character AI,"AI virtual beings, interactive characters",Series A,US,HIGH,
+Wonder Dynamics,https://wonderdynamics.com,https://linkedin.com/company/wonder-dynamics,Creative Tools,Wonder Studio - AI VFX for character replacement,Acquired by Autodesk,US,MEDIUM,
+Flawless AI,https://flawlessai.com,https://linkedin.com/company/flawless-ai,Video Generation,"AI for film/video, facial performance",Series A,US,MEDIUM,
+Metaphysic,https://metaphysic.ai,https://linkedin.com/company/metaphysic-ai,Video Generation,AI face/body generation for video,Series A,US,MEDIUM,
