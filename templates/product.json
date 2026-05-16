@@ -1,0 +1,188 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title"
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "price": {
+          "type": "price"
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector"
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "description": {
+          "type": "description"
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Materials",
+            "icon": "leather",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping & Returns",
+            "icon": "truck",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Dimensions",
+            "icon": "ruler",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Care Instructions",
+            "icon": "heart",
+            "content": "",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "caption",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "collapsible-row-0",
+        "collapsible-row-1",
+        "collapsible-row-2",
+        "collapsible-row-3",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "stacked",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "bcl-key-ingredient": {
+      "type": "bcl-product-key-ingredient",
+      "settings": {
+        "eyebrow": "Key ingredient",
+        "heading": "What it is.",
+        "code": "GHK-Cu",
+        "name": "Copper tripeptide-1",
+        "role": "Cosmetic active for the appearance of firmer-looking skin",
+        "body": "<p>A single-ingredient formula: water, the GHK-Cu peptide complex, a humectant, and the minimum preservation needed to keep it stable. The cobalt-blue color is the molecule.</p>"
+      }
+    },
+    "bcl-howto": {
+      "type": "bcl-product-howto",
+      "blocks": {
+        "s1": { "type": "step", "settings": { "label": "01", "title": "Clean skin", "body": "Cleanse and pat dry. Bare skin only — no other actives in the same layer." } },
+        "s2": { "type": "step", "settings": { "label": "02", "title": "3 to 5 drops", "body": "Smooth across the area. The cobalt-blue color absorbs within about a minute." } },
+        "s3": { "type": "step", "settings": { "label": "03", "title": "Layer over", "body": "Follow with your usual moisturizer. AM finish with SPF." } }
+      },
+      "block_order": ["s1", "s2", "s3"],
+      "settings": {
+        "eyebrow": "How to use",
+        "heading": "Drop, smooth, layer."
+      }
+    },
+    "bcl-inci": {
+      "type": "bcl-product-inci",
+      "settings": {
+        "eyebrow": "Full INCI",
+        "heading": "Everything in the bottle.",
+        "inci": "Aqua (water), Copper tripeptide-1, Glycerin, Pentylene glycol, Phenoxyethanol, Ethylhexylglycerin.",
+        "note": "No fragrance, dyes, sulfates, parabens, or essential oils. Suitable for sensitive skin patch testing."
+      }
+    },
+    "bcl-benefits": {
+      "type": "bcl-product-benefits",
+      "blocks": {
+        "b1": { "type": "benefit", "settings": { "text": "Supports the appearance of firmer-looking skin." } },
+        "b2": { "type": "benefit", "settings": { "text": "Improves the look of evenness and smoothness over time." } },
+        "b3": { "type": "benefit", "settings": { "text": "Leaves skin feeling soft and conditioned." } },
+        "b4": { "type": "benefit", "settings": { "text": "Pairs cleanly with the rest of your routine." } }
+      },
+      "block_order": ["b1", "b2", "b3", "b4"],
+      "settings": {
+        "eyebrow": "What you can expect",
+        "heading": "Cosmetic benefits, plainly stated.",
+        "caveat": "Cosmetic claims describe the appearance and feel of skin. Results vary. Use as directed."
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "bcl-key-ingredient",
+    "bcl-howto",
+    "bcl-inci",
+    "bcl-benefits",
+    "related-products"
+  ]
+}

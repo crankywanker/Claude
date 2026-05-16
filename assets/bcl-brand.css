@@ -1,0 +1,551 @@
+/* Blue Copper Labs — brand layer.
+   Extends Dawn's CSS custom properties; does not replace base.css. */
+
+:root {
+  --bcl-cobalt: #0b3d91;
+  --bcl-ice: #e8f1fa;
+  --bcl-off-white: #f7f8fa;
+  --bcl-graphite: #1a1f2c;
+  --bcl-accent: #5a6478;
+  --bcl-rule: rgba(26, 31, 44, 0.12);
+  --bcl-mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+}
+
+.bcl-section {
+  padding: 6rem 0;
+  color: var(--bcl-graphite);
+}
+
+.bcl-section--ice {
+  background: var(--bcl-ice);
+}
+
+.bcl-section--off-white {
+  background: var(--bcl-off-white);
+}
+
+.bcl-section--cobalt {
+  background: var(--bcl-cobalt);
+  color: #fff;
+}
+
+.bcl-container {
+  max-width: var(--page-width, 120rem);
+  margin: 0 auto;
+  padding: 0 2.5rem;
+}
+
+.bcl-eyebrow {
+  font-family: var(--bcl-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 1.1rem;
+  color: var(--bcl-accent);
+  margin: 0 0 1.2rem;
+}
+
+.bcl-section--cobalt .bcl-eyebrow {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.bcl-heading {
+  font-size: clamp(3.2rem, 5vw, 5.6rem);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  margin: 0 0 1.6rem;
+  font-weight: 500;
+}
+
+.bcl-lede {
+  font-size: clamp(1.6rem, 2vw, 2rem);
+  line-height: 1.5;
+  max-width: 62ch;
+  margin: 0 0 2.4rem;
+  color: var(--bcl-accent);
+}
+
+.bcl-section--cobalt .bcl-lede {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.bcl-mono {
+  font-family: var(--bcl-mono);
+  letter-spacing: 0.04em;
+}
+
+.bcl-rule {
+  height: 1px;
+  background: var(--bcl-rule);
+  border: 0;
+  margin: 0;
+}
+
+/* Hero ----------------------------------------------------------- */
+.bcl-hero {
+  min-height: 78vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: end;
+  background: linear-gradient(180deg, var(--bcl-ice) 0%, var(--bcl-off-white) 100%);
+  padding: 12rem 0 6rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.bcl-hero__inner {
+  position: relative;
+  z-index: 2;
+}
+
+.bcl-hero__headline {
+  font-size: clamp(4.4rem, 9vw, 11rem);
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  font-weight: 500;
+  color: var(--bcl-graphite);
+  margin: 0 0 2.4rem;
+}
+
+.bcl-hero__headline em {
+  font-style: normal;
+  color: var(--bcl-cobalt);
+}
+
+.bcl-hero__subhead {
+  max-width: 56ch;
+  font-size: clamp(1.6rem, 1.6vw, 2rem);
+  line-height: 1.45;
+  color: var(--bcl-graphite);
+  margin: 0 0 3.2rem;
+}
+
+.bcl-hero__meta {
+  display: flex;
+  gap: 2.4rem;
+  font-family: var(--bcl-mono);
+  font-size: 1.2rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--bcl-accent);
+  margin: 4rem 0 0;
+  padding-top: 2rem;
+  border-top: 1px solid var(--bcl-rule);
+  flex-wrap: wrap;
+}
+
+.bcl-hero__droplet {
+  position: absolute;
+  right: -8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: clamp(28rem, 40vw, 58rem);
+  height: clamp(28rem, 40vw, 58rem);
+  background: radial-gradient(circle at 35% 35%, #4a78c8 0%, var(--bcl-cobalt) 55%, #061f4a 100%);
+  border-radius: 50%;
+  filter: blur(2px);
+  opacity: 0.92;
+  z-index: 1;
+}
+
+@media (max-width: 749px) {
+  .bcl-hero {
+    min-height: 70vh;
+    padding: 8rem 0 5rem;
+  }
+  .bcl-hero__droplet {
+    width: 22rem;
+    height: 22rem;
+    right: -6rem;
+    top: 12%;
+    transform: none;
+    opacity: 0.7;
+  }
+}
+
+/* Buttons -------------------------------------------------------- */
+.bcl-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.4rem 2.4rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: var(--bcl-mono);
+  background: var(--bcl-graphite);
+  color: #fff;
+  border: 1px solid var(--bcl-graphite);
+  transition: background 160ms ease, color 160ms ease;
+}
+
+.bcl-btn:hover,
+.bcl-btn:focus-visible {
+  background: var(--bcl-cobalt);
+  border-color: var(--bcl-cobalt);
+  color: #fff;
+}
+
+.bcl-btn--ghost {
+  background: transparent;
+  color: var(--bcl-graphite);
+}
+
+.bcl-btn--ghost:hover,
+.bcl-btn--ghost:focus-visible {
+  background: var(--bcl-graphite);
+  color: #fff;
+}
+
+/* Science explainer ---------------------------------------------- */
+.bcl-science__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-top: 4.8rem;
+}
+
+.bcl-science__card {
+  background: var(--bcl-off-white);
+  border: 1px solid var(--bcl-rule);
+  padding: 3.2rem;
+}
+
+.bcl-science__code {
+  font-family: var(--bcl-mono);
+  font-size: 1.2rem;
+  letter-spacing: 0.18em;
+  color: var(--bcl-cobalt);
+  text-transform: uppercase;
+  margin: 0 0 1.2rem;
+}
+
+.bcl-science__name {
+  font-size: 2.4rem;
+  margin: 0 0 1.6rem;
+  font-weight: 500;
+}
+
+.bcl-science__desc {
+  margin: 0;
+  line-height: 1.55;
+  color: var(--bcl-accent);
+}
+
+@media (max-width: 749px) {
+  .bcl-science__grid { grid-template-columns: 1fr; gap: 1.6rem; }
+}
+
+/* Product grid --------------------------------------------------- */
+.bcl-products {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+  margin-top: 4.8rem;
+}
+
+.bcl-product-card {
+  background: #fff;
+  border: 1px solid var(--bcl-rule);
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 200ms ease, border-color 200ms ease;
+}
+
+.bcl-product-card:hover,
+.bcl-product-card:focus-visible {
+  transform: translateY(-2px);
+  border-color: var(--bcl-cobalt);
+}
+
+.bcl-product-card__code {
+  font-family: var(--bcl-mono);
+  font-size: 1.1rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--bcl-cobalt);
+  margin: 0 0 1.6rem;
+}
+
+.bcl-product-card__name {
+  font-size: 2.8rem;
+  margin: 0 0 0.8rem;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.bcl-product-card__tag {
+  font-size: 1.4rem;
+  color: var(--bcl-accent);
+  margin: 0 0 2.4rem;
+}
+
+.bcl-product-card__media {
+  aspect-ratio: 4 / 5;
+  background: var(--bcl-ice);
+  margin: 0 -3.2rem 2.4rem;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.bcl-product-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bcl-product-card__price {
+  margin-top: auto;
+  font-family: var(--bcl-mono);
+  font-size: 1.6rem;
+  letter-spacing: 0.06em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  border-top: 1px solid var(--bcl-rule);
+}
+
+@media (max-width: 749px) {
+  .bcl-products { grid-template-columns: 1fr; gap: 1.6rem; }
+}
+
+/* How it works --------------------------------------------------- */
+.bcl-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
+  margin-top: 4.8rem;
+  counter-reset: bcl-step;
+}
+
+.bcl-step {
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  counter-increment: bcl-step;
+}
+
+.bcl-section--cobalt .bcl-step__num {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.bcl-step__num {
+  font-family: var(--bcl-mono);
+  font-size: 1.2rem;
+  letter-spacing: 0.18em;
+  color: var(--bcl-accent);
+  margin: 0 0 1.2rem;
+}
+
+.bcl-step__num::before {
+  content: counter(bcl-step, decimal-leading-zero) " / ";
+}
+
+.bcl-step__title {
+  font-size: 2rem;
+  margin: 0 0 0.8rem;
+  font-weight: 500;
+}
+
+.bcl-step__body {
+  margin: 0;
+  line-height: 1.55;
+  opacity: 0.84;
+}
+
+@media (max-width: 749px) {
+  .bcl-steps { grid-template-columns: 1fr; gap: 1.6rem; }
+}
+
+/* Ingredient transparency --------------------------------------- */
+.bcl-ingredients__table {
+  margin-top: 4.8rem;
+  border-top: 1px solid var(--bcl-rule);
+}
+
+.bcl-ingredient {
+  display: grid;
+  grid-template-columns: 14rem 1fr 1fr;
+  gap: 2.4rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--bcl-rule);
+  align-items: baseline;
+}
+
+.bcl-ingredient__code {
+  font-family: var(--bcl-mono);
+  font-size: 1.2rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--bcl-cobalt);
+}
+
+.bcl-ingredient__name {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.bcl-ingredient__role {
+  color: var(--bcl-accent);
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 749px) {
+  .bcl-ingredient { grid-template-columns: 1fr; gap: 0.4rem; padding: 1.6rem 0; }
+}
+
+/* FAQ ------------------------------------------------------------ */
+.bcl-faq__list {
+  margin-top: 4rem;
+  border-top: 1px solid var(--bcl-rule);
+}
+
+.bcl-faq__item {
+  border-bottom: 1px solid var(--bcl-rule);
+}
+
+.bcl-faq__summary {
+  padding: 2.4rem 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  list-style: none;
+}
+
+.bcl-faq__summary::-webkit-details-marker { display: none; }
+
+.bcl-faq__summary::after {
+  content: "+";
+  font-family: var(--bcl-mono);
+  font-size: 2.4rem;
+  color: var(--bcl-cobalt);
+  transition: transform 200ms ease;
+}
+
+.bcl-faq__item[open] .bcl-faq__summary::after {
+  content: "−";
+}
+
+.bcl-faq__body {
+  padding: 0 0 2.4rem;
+  color: var(--bcl-accent);
+  line-height: 1.6;
+  max-width: 72ch;
+}
+
+/* Compliance disclaimer ----------------------------------------- */
+.bcl-disclaimer {
+  border-top: 1px solid var(--bcl-rule);
+  margin-top: 2rem;
+  padding: 2.4rem 0 0;
+  font-size: 1.1rem;
+  line-height: 1.55;
+  color: var(--bcl-accent);
+  letter-spacing: 0.02em;
+  max-width: 80ch;
+}
+
+/* Product template extras --------------------------------------- */
+.bcl-product-hero {
+  padding: 4rem 0;
+}
+
+.bcl-product-key {
+  background: var(--bcl-ice);
+  padding: 2.4rem;
+  border-left: 3px solid var(--bcl-cobalt);
+  margin: 2.4rem 0;
+}
+
+.bcl-product-key__label {
+  font-family: var(--bcl-mono);
+  font-size: 1.1rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--bcl-cobalt);
+  margin: 0 0 0.8rem;
+}
+
+.bcl-product-key__value {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0 0 0.4rem;
+}
+
+.bcl-product-key__role {
+  margin: 0;
+  color: var(--bcl-accent);
+}
+
+.bcl-howto {
+  padding: 4rem 0;
+  border-top: 1px solid var(--bcl-rule);
+  border-bottom: 1px solid var(--bcl-rule);
+}
+
+.bcl-howto__steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.4rem;
+  margin-top: 2.4rem;
+}
+
+@media (max-width: 749px) {
+  .bcl-howto__steps { grid-template-columns: 1fr; }
+}
+
+.bcl-inci {
+  padding: 4rem 0;
+}
+
+.bcl-inci__list {
+  font-family: var(--bcl-mono);
+  font-size: 1.2rem;
+  line-height: 1.7;
+  letter-spacing: 0.04em;
+  color: var(--bcl-accent);
+  margin: 1.6rem 0 0;
+}
+
+.bcl-benefits {
+  padding: 4rem 0;
+  background: var(--bcl-off-white);
+}
+
+.bcl-benefits__list {
+  list-style: none;
+  padding: 0;
+  margin: 2.4rem 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.6rem;
+}
+
+.bcl-benefits__list li {
+  padding: 1.6rem 0;
+  border-top: 1px solid var(--bcl-rule);
+  line-height: 1.5;
+}
+
+@media (max-width: 749px) {
+  .bcl-benefits__list { grid-template-columns: 1fr; }
+}
+
+/* Reduced motion ------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  .bcl-product-card,
+  .bcl-faq__summary::after,
+  .bcl-btn {
+    transition: none;
+  }
+  .bcl-product-card:hover { transform: none; }
+}

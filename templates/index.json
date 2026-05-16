@@ -1,0 +1,162 @@
+{
+  "sections": {
+    "hero": {
+      "type": "bcl-hero",
+      "settings": {
+        "eyebrow": "Blue Copper Labs / Lot 001",
+        "cta_label": "Shop the serums",
+        "cta_link": "shopify://collections/all",
+        "secondary_label": "The science",
+        "secondary_link": "#science",
+        "meta_1": "Single-ingredient formulas",
+        "meta_2": "Made in California",
+        "meta_3": "Vegan / Fragrance-free"
+      }
+    },
+    "science": {
+      "type": "bcl-science",
+      "blocks": {
+        "ghk": {
+          "type": "peptide",
+          "settings": {
+            "code": "GHK-Cu",
+            "name": "Glycyl-L-histidyl-L-lysine, copper(II) complex",
+            "description": "Used in topical formulas for the appearance of firmer, smoother-looking skin. Naturally cobalt-blue in solution."
+          }
+        },
+        "ahk": {
+          "type": "peptide",
+          "settings": {
+            "code": "AHK-Cu",
+            "name": "Alanyl-L-histidyl-L-lysine, copper(II) complex",
+            "description": "Used in topical formulas for the look of fuller, denser-appearing hair around the scalp and beard."
+          }
+        }
+      },
+      "block_order": ["ghk", "ahk"],
+      "settings": {
+        "eyebrow": "The peptides",
+        "heading": "Two copper-peptide complexes. Two single-purpose serums.",
+        "lede": "Copper-peptide complexes are tripeptides bound to a copper(II) ion. The deep blue is the complex itself — no dye, no fragrance."
+      }
+    },
+    "products": {
+      "type": "bcl-product-grid",
+      "blocks": {
+        "p1": {
+          "type": "product_card",
+          "settings": {
+            "code": "GHK-Cu / 01",
+            "name": "GHK-Cu Serum",
+            "tag": "For the appearance of firmer-looking skin",
+            "fallback_price": "$48"
+          }
+        },
+        "p2": {
+          "type": "product_card",
+          "settings": {
+            "code": "AHK-Cu / 02",
+            "name": "AHK-Cu Serum",
+            "tag": "For the look of fuller, denser-appearing hair",
+            "fallback_price": "$52"
+          }
+        }
+      },
+      "block_order": ["p1", "p2"],
+      "settings": {
+        "eyebrow": "The serums",
+        "heading": "Pick the molecule."
+      }
+    },
+    "how": {
+      "type": "bcl-how-it-works",
+      "blocks": {
+        "s1": {
+          "type": "step",
+          "settings": {
+            "label": "Cleanse",
+            "title": "Start with clean, dry skin",
+            "body": "Use your usual gentle cleanser. Pat dry. The serum absorbs best on bare skin."
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "label": "Apply",
+            "title": "Press in 3 to 5 drops",
+            "body": "Smooth a thin layer across the face or scalp area. Let the cobalt-blue formula settle for about a minute."
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "label": "Layer",
+            "title": "Follow with moisturizer or SPF",
+            "body": "Once dry, continue your usual routine. Use morning or night — consistency matters more than time of day."
+          }
+        }
+      },
+      "block_order": ["s1", "s2", "s3"],
+      "settings": {
+        "eyebrow": "Routine",
+        "heading": "Three steps. Once a day.",
+        "lede": "A simple topical routine designed for the appearance and feel of the skin or scalp."
+      }
+    },
+    "ingredients": {
+      "type": "bcl-ingredients",
+      "blocks": {
+        "i1": { "type": "ingredient", "settings": { "code": "INCI-01", "name": "Aqua (water)", "role": "Solvent base" } },
+        "i2": { "type": "ingredient", "settings": { "code": "INCI-02", "name": "Copper tripeptide-1 (GHK-Cu)", "role": "Cosmetic active — appearance benefit" } },
+        "i3": { "type": "ingredient", "settings": { "code": "INCI-03", "name": "Glycerin", "role": "Humectant — feel and finish" } },
+        "i4": { "type": "ingredient", "settings": { "code": "INCI-04", "name": "Pentylene glycol", "role": "Solvent and preservation aid" } },
+        "i5": { "type": "ingredient", "settings": { "code": "INCI-05", "name": "Phenoxyethanol", "role": "Preservative" } }
+      },
+      "block_order": ["i1", "i2", "i3", "i4", "i5"],
+      "settings": {
+        "eyebrow": "Full transparency",
+        "heading": "Every ingredient, on the record.",
+        "lede": "Short ingredient decks. No fragrance, no dyes, no fillers we cannot defend."
+      }
+    },
+    "faq": {
+      "type": "bcl-faq",
+      "blocks": {
+        "q1": {
+          "type": "qa",
+          "settings": {
+            "question": "Why is the serum blue?",
+            "answer": "<p>The color is the copper-peptide complex itself. We do not add any pigment or dye. If the formula goes pale, the active has degraded.</p>"
+          }
+        },
+        "q2": {
+          "type": "qa",
+          "settings": {
+            "question": "Is this a drug?",
+            "answer": "<p>No. These are cosmetic products intended to beautify and promote attractiveness. They are not intended to diagnose, treat, cure, or prevent any disease.</p>"
+          }
+        },
+        "q3": {
+          "type": "qa",
+          "settings": {
+            "question": "Can I use both serums?",
+            "answer": "<p>Yes. They are formulated to be used in the same routine — GHK-Cu on the face, AHK-Cu on the scalp or beard area. Apply each to clean, dry skin and follow with your usual products.</p>"
+          }
+        },
+        "q4": {
+          "type": "qa",
+          "settings": {
+            "question": "How should I store it?",
+            "answer": "<p>Keep the bottle closed, away from direct sunlight, at room temperature. Copper-peptide solutions are sensitive to light and to other actives — use the serum on its own layer.</p>"
+          }
+        }
+      },
+      "block_order": ["q1", "q2", "q3", "q4"],
+      "settings": {
+        "eyebrow": "Common questions",
+        "heading": "What people ask."
+      }
+    }
+  },
+  "order": ["hero", "science", "products", "how", "ingredients", "faq"]
+}

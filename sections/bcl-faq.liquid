@@ -1,0 +1,98 @@
+{{ 'bcl-brand.css' | asset_url | stylesheet_tag }}
+
+<section class="bcl-section" aria-labelledby="BclFaq-{{ section.id }}-heading">
+  <div class="bcl-container">
+    {%- if section.settings.eyebrow != blank -%}
+      <p class="bcl-eyebrow">{{ section.settings.eyebrow | escape }}</p>
+    {%- endif -%}
+    <h2 id="BclFaq-{{ section.id }}-heading" class="bcl-heading">
+      {{ section.settings.heading | escape }}
+    </h2>
+
+    <div class="bcl-faq__list">
+      {%- for block in section.blocks -%}
+        <details class="bcl-faq__item" {{ block.shopify_attributes }}>
+          <summary class="bcl-faq__summary">{{ block.settings.question | escape }}</summary>
+          <div class="bcl-faq__body">{{ block.settings.answer }}</div>
+        </details>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "BCL FAQ",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "Common questions"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "What people ask."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "qa",
+      "name": "Question",
+      "limit": 12,
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question",
+          "default": "Why is the serum blue?"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer",
+          "default": "<p>The color is the copper-peptide complex itself. We do not add any pigment or dye. If the formula goes pale, the active has degraded.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "BCL FAQ",
+      "blocks": [
+        {
+          "type": "qa",
+          "settings": {
+            "question": "Why is the serum blue?",
+            "answer": "<p>The color is the copper-peptide complex itself. We do not add any pigment or dye. If the formula goes pale, the active has degraded.</p>"
+          }
+        },
+        {
+          "type": "qa",
+          "settings": {
+            "question": "Is this a drug?",
+            "answer": "<p>No. These are cosmetic products intended to beautify and promote attractiveness. They are not intended to diagnose, treat, cure, or prevent any disease.</p>"
+          }
+        },
+        {
+          "type": "qa",
+          "settings": {
+            "question": "Can I use both serums?",
+            "answer": "<p>Yes. They are formulated to be used in the same routine — GHK-Cu on the face, AHK-Cu on the scalp or beard area. Apply each to clean, dry skin and follow with your usual products.</p>"
+          }
+        },
+        {
+          "type": "qa",
+          "settings": {
+            "question": "How should I store it?",
+            "answer": "<p>Keep the bottle closed, away from direct sunlight, at room temperature. Copper-peptide solutions are sensitive to light and to other actives — use the serum on its own layer.</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

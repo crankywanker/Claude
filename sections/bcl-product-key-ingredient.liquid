@@ -1,0 +1,73 @@
+{{ 'bcl-brand.css' | asset_url | stylesheet_tag }}
+
+<section class="bcl-product-hero" aria-labelledby="BclKey-{{ section.id }}-heading">
+  <div class="page-width">
+    {%- if section.settings.eyebrow != blank -%}
+      <p class="bcl-eyebrow">{{ section.settings.eyebrow | escape }}</p>
+    {%- endif -%}
+    <h2 id="BclKey-{{ section.id }}-heading" class="bcl-heading">
+      {{ section.settings.heading | escape }}
+    </h2>
+
+    <div class="bcl-product-key">
+      <p class="bcl-product-key__label">{{ section.settings.code | escape }}</p>
+      <p class="bcl-product-key__value">{{ section.settings.name | escape }}</p>
+      <p class="bcl-product-key__role">{{ section.settings.role | escape }}</p>
+    </div>
+
+    {%- if section.settings.body != blank -%}
+      <div class="bcl-lede">{{ section.settings.body }}</div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "BCL Product key ingredient",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "Key ingredient"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "What it is."
+    },
+    {
+      "type": "text",
+      "id": "code",
+      "label": "Peptide code",
+      "default": "GHK-Cu"
+    },
+    {
+      "type": "text",
+      "id": "name",
+      "label": "Ingredient name",
+      "default": "Copper tripeptide-1"
+    },
+    {
+      "type": "text",
+      "id": "role",
+      "label": "Cosmetic role",
+      "default": "Cosmetic active for the appearance of firmer-looking skin"
+    },
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Body",
+      "default": "<p>A single-ingredient formula: water, the GHK-Cu peptide complex, a humectant, and the minimum preservation needed to keep it stable. The cobalt-blue color is the molecule.</p>"
+    }
+  ],
+  "presets": [
+    { "name": "BCL Product key ingredient" }
+  ],
+  "enabled_on": {
+    "templates": ["product"]
+  }
+}
+{% endschema %}

@@ -1,0 +1,68 @@
+{{ 'bcl-brand.css' | asset_url | stylesheet_tag }}
+
+<section class="bcl-howto" aria-labelledby="BclHowto-{{ section.id }}-heading">
+  <div class="page-width">
+    {%- if section.settings.eyebrow != blank -%}
+      <p class="bcl-eyebrow">{{ section.settings.eyebrow | escape }}</p>
+    {%- endif -%}
+    <h2 id="BclHowto-{{ section.id }}-heading" class="bcl-heading">
+      {{ section.settings.heading | escape }}
+    </h2>
+
+    <div class="bcl-howto__steps">
+      {%- for block in section.blocks -%}
+        <div {{ block.shopify_attributes }}>
+          <p class="bcl-step__num">{{ block.settings.label | escape }}</p>
+          <h3 class="bcl-step__title">{{ block.settings.title | escape }}</h3>
+          <p class="bcl-step__body">{{ block.settings.body | escape }}</p>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "BCL Product how to use",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "How to use"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Drop, smooth, layer."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Step",
+      "limit": 5,
+      "settings": [
+        { "type": "text", "id": "label", "label": "Label", "default": "AM / PM" },
+        { "type": "text", "id": "title", "label": "Title", "default": "Apply to clean, dry skin" },
+        { "type": "textarea", "id": "body", "label": "Body", "default": "Press 3 to 5 drops across the area. Let absorb before other products." }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "BCL Product how to use",
+      "blocks": [
+        { "type": "step", "settings": { "label": "01", "title": "Clean skin", "body": "Cleanse and pat dry. Bare skin only — no other actives in the same layer." } },
+        { "type": "step", "settings": { "label": "02", "title": "3 to 5 drops", "body": "Smooth across the area. The cobalt-blue color absorbs within about a minute." } },
+        { "type": "step", "settings": { "label": "03", "title": "Layer over", "body": "Follow with your usual moisturizer. AM finish with SPF." } }
+      ]
+    }
+  ],
+  "enabled_on": {
+    "templates": ["product"]
+  }
+}
+{% endschema %}

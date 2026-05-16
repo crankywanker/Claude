@@ -1,0 +1,106 @@
+{{ 'bcl-brand.css' | asset_url | stylesheet_tag }}
+
+<section class="bcl-section bcl-section--ice" aria-labelledby="BclIng-{{ section.id }}-heading">
+  <div class="bcl-container">
+    {%- if section.settings.eyebrow != blank -%}
+      <p class="bcl-eyebrow">{{ section.settings.eyebrow | escape }}</p>
+    {%- endif -%}
+    <h2 id="BclIng-{{ section.id }}-heading" class="bcl-heading">
+      {{ section.settings.heading | escape }}
+    </h2>
+    {%- if section.settings.lede != blank -%}
+      <p class="bcl-lede">{{ section.settings.lede | escape }}</p>
+    {%- endif -%}
+
+    <div class="bcl-ingredients__table" role="list">
+      {%- for block in section.blocks -%}
+        <div class="bcl-ingredient" role="listitem" {{ block.shopify_attributes }}>
+          <div class="bcl-ingredient__code">{{ block.settings.code | escape }}</div>
+          <div class="bcl-ingredient__name">{{ block.settings.name | escape }}</div>
+          <div class="bcl-ingredient__role">{{ block.settings.role | escape }}</div>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "BCL Ingredients",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "Full transparency"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Every ingredient, on the record."
+    },
+    {
+      "type": "textarea",
+      "id": "lede",
+      "label": "Lede",
+      "default": "Short ingredient decks. No fragrance, no dyes, no fillers we cannot defend."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "ingredient",
+      "name": "Ingredient row",
+      "limit": 20,
+      "settings": [
+        {
+          "type": "text",
+          "id": "code",
+          "label": "Code / INCI shorthand",
+          "default": "INCI-01"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Ingredient name",
+          "default": "Aqua (water)"
+        },
+        {
+          "type": "text",
+          "id": "role",
+          "label": "Role",
+          "default": "Solvent base"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "BCL Ingredients",
+      "blocks": [
+        {
+          "type": "ingredient",
+          "settings": { "code": "INCI-01", "name": "Aqua (water)", "role": "Solvent base" }
+        },
+        {
+          "type": "ingredient",
+          "settings": { "code": "INCI-02", "name": "Copper tripeptide-1 (GHK-Cu)", "role": "Cosmetic active — appearance benefit" }
+        },
+        {
+          "type": "ingredient",
+          "settings": { "code": "INCI-03", "name": "Glycerin", "role": "Humectant — feel and finish" }
+        },
+        {
+          "type": "ingredient",
+          "settings": { "code": "INCI-04", "name": "Pentylene glycol", "role": "Solvent and preservation aid" }
+        },
+        {
+          "type": "ingredient",
+          "settings": { "code": "INCI-05", "name": "Phenoxyethanol", "role": "Preservative" }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,110 @@
+{{ 'bcl-brand.css' | asset_url | stylesheet_tag }}
+
+<section class="bcl-section bcl-section--cobalt" aria-labelledby="BclSteps-{{ section.id }}-heading">
+  <div class="bcl-container">
+    {%- if section.settings.eyebrow != blank -%}
+      <p class="bcl-eyebrow">{{ section.settings.eyebrow | escape }}</p>
+    {%- endif -%}
+    <h2 id="BclSteps-{{ section.id }}-heading" class="bcl-heading">
+      {{ section.settings.heading | escape }}
+    </h2>
+    {%- if section.settings.lede != blank -%}
+      <p class="bcl-lede">{{ section.settings.lede | escape }}</p>
+    {%- endif -%}
+
+    <ol class="bcl-steps" style="list-style:none; padding:0;">
+      {%- for block in section.blocks -%}
+        <li class="bcl-step" {{ block.shopify_attributes }}>
+          <p class="bcl-step__num">{{ block.settings.label | escape }}</p>
+          <h3 class="bcl-step__title">{{ block.settings.title | escape }}</h3>
+          <p class="bcl-step__body">{{ block.settings.body | escape }}</p>
+        </li>
+      {%- endfor -%}
+    </ol>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "BCL How it works",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "Routine"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Three steps. Once a day."
+    },
+    {
+      "type": "textarea",
+      "id": "lede",
+      "label": "Lede",
+      "default": "A simple topical routine designed for the appearance and feel of the skin or scalp."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Step",
+      "limit": 6,
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Short label",
+          "default": "Cleanse"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Start with clean, dry skin"
+        },
+        {
+          "type": "textarea",
+          "id": "body",
+          "label": "Body",
+          "default": "Use your usual gentle cleanser. Pat dry. The serum absorbs best on bare skin."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "BCL How it works",
+      "blocks": [
+        {
+          "type": "step",
+          "settings": {
+            "label": "Cleanse",
+            "title": "Start with clean, dry skin",
+            "body": "Use your usual gentle cleanser. Pat dry. The serum absorbs best on bare skin."
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "label": "Apply",
+            "title": "Press in 3 to 5 drops",
+            "body": "Smooth a thin layer across the face or scalp area. Let the cobalt-blue formula settle for about a minute."
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "label": "Layer",
+            "title": "Follow with moisturizer or SPF",
+            "body": "Once dry, continue your usual routine. Use morning or night — consistency matters more than time of day."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

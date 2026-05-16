@@ -1,0 +1,57 @@
+{{ 'bcl-brand.css' | asset_url | stylesheet_tag }}
+
+<section class="bcl-inci" aria-labelledby="BclInci-{{ section.id }}-heading">
+  <div class="page-width">
+    {%- if section.settings.eyebrow != blank -%}
+      <p class="bcl-eyebrow">{{ section.settings.eyebrow | escape }}</p>
+    {%- endif -%}
+    <h2 id="BclInci-{{ section.id }}-heading" class="bcl-heading">
+      {{ section.settings.heading | escape }}
+    </h2>
+    {%- if section.settings.inci != blank -%}
+      <p class="bcl-inci__list">{{ section.settings.inci | escape }}</p>
+    {%- endif -%}
+    {%- if section.settings.note != blank -%}
+      <p class="bcl-lede" style="margin-top:2rem;">{{ section.settings.note | escape }}</p>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "BCL Product INCI",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "Full INCI"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Everything in the bottle."
+    },
+    {
+      "type": "textarea",
+      "id": "inci",
+      "label": "INCI list (comma-separated)",
+      "default": "Aqua (water), Copper tripeptide-1, Glycerin, Pentylene glycol, Phenoxyethanol, Ethylhexylglycerin."
+    },
+    {
+      "type": "textarea",
+      "id": "note",
+      "label": "Notes",
+      "default": "No fragrance, dyes, sulfates, parabens, or essential oils. Suitable for sensitive skin patch testing."
+    }
+  ],
+  "presets": [
+    { "name": "BCL Product INCI" }
+  ],
+  "enabled_on": {
+    "templates": ["product"]
+  }
+}
+{% endschema %}

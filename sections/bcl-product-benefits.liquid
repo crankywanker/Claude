@@ -1,0 +1,78 @@
+{{ 'bcl-brand.css' | asset_url | stylesheet_tag }}
+
+<section class="bcl-benefits" aria-labelledby="BclBen-{{ section.id }}-heading">
+  <div class="page-width">
+    {%- if section.settings.eyebrow != blank -%}
+      <p class="bcl-eyebrow">{{ section.settings.eyebrow | escape }}</p>
+    {%- endif -%}
+    <h2 id="BclBen-{{ section.id }}-heading" class="bcl-heading">
+      {{ section.settings.heading | escape }}
+    </h2>
+
+    <ul class="bcl-benefits__list">
+      {%- for block in section.blocks -%}
+        <li {{ block.shopify_attributes }}>{{ block.settings.text | escape }}</li>
+      {%- endfor -%}
+    </ul>
+
+    {%- if section.settings.caveat != blank -%}
+      <p class="bcl-disclaimer">{{ section.settings.caveat | escape }}</p>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "BCL Product benefits",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "What you can expect"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Cosmetic benefits, plainly stated."
+    },
+    {
+      "type": "textarea",
+      "id": "caveat",
+      "label": "Caveat / qualifier",
+      "default": "Cosmetic claims describe the appearance and feel of skin. Results vary. Use as directed."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "benefit",
+      "name": "Benefit",
+      "limit": 8,
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Benefit (appearance / feel language only)",
+          "default": "Supports the appearance of firmer-looking skin."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "BCL Product benefits",
+      "blocks": [
+        { "type": "benefit", "settings": { "text": "Supports the appearance of firmer-looking skin." } },
+        { "type": "benefit", "settings": { "text": "Improves the look of evenness and smoothness over time." } },
+        { "type": "benefit", "settings": { "text": "Leaves skin feeling soft and conditioned." } },
+        { "type": "benefit", "settings": { "text": "Pairs cleanly with the rest of your routine." } }
+      ]
+    }
+  ],
+  "enabled_on": {
+    "templates": ["product"]
+  }
+}
+{% endschema %}

@@ -1,0 +1,130 @@
+{{ 'bcl-brand.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign headline = section.settings.headline | default: settings.bcl_hero_headline_default
+  assign subhead = section.settings.subhead | default: settings.bcl_hero_subhead_default
+-%}
+
+<section
+  class="bcl-hero"
+  aria-labelledby="BclHero-{{ section.id }}-headline"
+>
+  <div class="bcl-hero__droplet" aria-hidden="true"></div>
+  <div class="bcl-container bcl-hero__inner">
+    {%- if section.settings.eyebrow != blank -%}
+      <p class="bcl-eyebrow">{{ section.settings.eyebrow | escape }}</p>
+    {%- endif -%}
+
+    <h1 id="BclHero-{{ section.id }}-headline" class="bcl-hero__headline">
+      {{ headline }}
+    </h1>
+
+    {%- if subhead != blank -%}
+      <p class="bcl-hero__subhead">{{ subhead | escape }}</p>
+    {%- endif -%}
+
+    <div>
+      {%- if section.settings.cta_label != blank and section.settings.cta_link != blank -%}
+        <a href="{{ section.settings.cta_link }}" class="bcl-btn">
+          {{ section.settings.cta_label | escape }}
+        </a>
+      {%- endif -%}
+      {%- if section.settings.secondary_label != blank and section.settings.secondary_link != blank -%}
+        <a href="{{ section.settings.secondary_link }}" class="bcl-btn bcl-btn--ghost">
+          {{ section.settings.secondary_label | escape }}
+        </a>
+      {%- endif -%}
+    </div>
+
+    {%- if section.settings.meta_1 != blank or section.settings.meta_2 != blank or section.settings.meta_3 != blank -%}
+      <div class="bcl-hero__meta" role="list">
+        {%- if section.settings.meta_1 != blank -%}
+          <span role="listitem">{{ section.settings.meta_1 | escape }}</span>
+        {%- endif -%}
+        {%- if section.settings.meta_2 != blank -%}
+          <span role="listitem">{{ section.settings.meta_2 | escape }}</span>
+        {%- endif -%}
+        {%- if section.settings.meta_3 != blank -%}
+          <span role="listitem">{{ section.settings.meta_3 | escape }}</span>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "BCL Hero",
+  "tag": "section",
+  "class": "bcl-hero-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "Blue Copper Labs / Lot 001"
+    },
+    {
+      "type": "text",
+      "id": "headline",
+      "label": "Headline (HTML, use <em> for cobalt highlight)",
+      "info": "Leave blank to use the default set in Theme settings."
+    },
+    {
+      "type": "textarea",
+      "id": "subhead",
+      "label": "Subhead",
+      "info": "Leave blank to use the default set in Theme settings."
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "Primary CTA label",
+      "default": "Shop the serums"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "Primary CTA link"
+    },
+    {
+      "type": "text",
+      "id": "secondary_label",
+      "label": "Secondary CTA label",
+      "default": "The science"
+    },
+    {
+      "type": "url",
+      "id": "secondary_link",
+      "label": "Secondary CTA link"
+    },
+    {
+      "type": "header",
+      "content": "Footer metadata"
+    },
+    {
+      "type": "text",
+      "id": "meta_1",
+      "label": "Meta line 1",
+      "default": "Single-ingredient formulas"
+    },
+    {
+      "type": "text",
+      "id": "meta_2",
+      "label": "Meta line 2",
+      "default": "Made in California"
+    },
+    {
+      "type": "text",
+      "id": "meta_3",
+      "label": "Meta line 3",
+      "default": "Vegan / Fragrance-free"
+    }
+  ],
+  "presets": [
+    {
+      "name": "BCL Hero"
+    }
+  ]
+}
+{% endschema %}
