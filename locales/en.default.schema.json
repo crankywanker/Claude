@@ -2283,6 +2283,10 @@
             "heading": {
               "info": "Leave blank to hide this pairing"
             },
+            "content": {
+              "label": "Content",
+              "info": "Include icons disclosing the use of your product."
+            },
             "icon_1": {
               "label": "Icon"
             },
