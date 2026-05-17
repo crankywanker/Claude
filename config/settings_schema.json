@@ -1501,7 +1501,7 @@
         "type": "text",
         "id": "bcl_hero_headline_default",
         "label": "Default hero headline",
-        "default": "Copper, in blue."
+        "default": "Copper, in <em>blue</em>."
       },
       {
         "type": "textarea",
